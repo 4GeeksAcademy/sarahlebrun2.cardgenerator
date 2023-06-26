@@ -1,1 +1,90 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+  box-sizing: border-box;
+}
+.card {
+  background-color: white;
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: relative;
+  font-size: 75px;
+  margin: 0 10px;
+}
+.card ::before {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 75px;
+}
+.card ::after {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 75px;
+}
+.spade:before,
+.spade:after {
+  content: "\2660";
+  display: flex;
+}
+.spade:before {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.spade:after {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 65px;
+}
+.club:before,
+.club:after {
+  content: "\2663";
+  display: flex;
+}
+.club:before {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.club:after {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 65px;
+}
+.heart:before,
+.heart:after {
+  content: "\2665";
+  color: red;
+  display: flex;
+}
+.heart:before {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.heart:after {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 65px;
+}
+.diamond:before,
+.diamond:after {
+  content: "\2666";
+  color: red;
+  display: flex;
+}
+.diamond:before {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.diamond:after {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 65px;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
